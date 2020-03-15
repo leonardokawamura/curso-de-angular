@@ -10,4 +10,25 @@
         <img src="{{ urlImg }}" alt="">
         <img [src]="urlImg" alt="">
     </article>
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>
+            Selecione uma classe:
+            <select #classe (change)="0">
+                <option value="alert-success">sucess</option>
+                <option value="alert-info">info</option>
+                <option value="alert-warning">warning</option>
+                <option value="alert-danger">danger</option>
+            </select>
+
+            <div class="alert {{ classe.value }}">Texto colorido conforme valor do combox</div>
+
+            <div class="alert alert-danger" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">Texto de erro</div>
+
+            <div class="alert" role="alert" [class.alert-success]="classe.value=='alert-success'">success</div>
+            <div class="alert" role="alert" [class.alert-info]="classe.value=='alert-info'">info</div>
+            <div class="alert" role="alert" [class.alert-warning]="classe.value=='alert-warning'">warning</div>
+            <div class="alert" role="alert" [class.alert-danger]="classe.value=='alert-danger'">danger</div>            
+        </div>
+    </article>
 </section>
