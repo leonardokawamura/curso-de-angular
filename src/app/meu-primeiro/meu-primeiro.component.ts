@@ -5,5 +5,5 @@ import { Component } from "@angular/core";
     template: `<p>Meu primeiro component com Angular 2!</p>`
 })
 export class MeuPrimeiroComponent {
-
+    
 }
