@@ -1,0 +1,13 @@
+<section>
+    <article>
+        <h3>Interpolation / Interpolação</h3>
+        <p>String renderizada com interpolação: {{ url }}</p>
+        <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+        <p>Resultado de 1 + 1 é: {{ getResult() }}</p>
+    </article>
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{ urlImg }}" alt="">
+        <img [src]="urlImg" alt="">
+    </article>
+</section>
