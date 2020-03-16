@@ -80,4 +80,7 @@
         <h3>Input/Output Property</h3>
         <app-input-property [curso]="nomeDoCurso"></app-input-property>
     </article>
+    <article>
+        <app-output-property (mudouValor)="onValorChanged($event)"></app-output-property>
+    </article>
 </section>

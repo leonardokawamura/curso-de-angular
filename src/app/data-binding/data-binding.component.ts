@@ -44,4 +44,8 @@ export class DataBindingComponent implements OnInit {
     this.isMouseOver = !this.isMouseOver;
   }
 
+  onValorChanged(event: any) {
+    console.log(event);
+  }
+
 }
