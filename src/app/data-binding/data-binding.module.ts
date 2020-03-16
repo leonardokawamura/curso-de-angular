@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataBindingComponent } from './data-binding.component';
-
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     DataBindingComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule    
   ],
   exports: [
     DataBindingComponent
